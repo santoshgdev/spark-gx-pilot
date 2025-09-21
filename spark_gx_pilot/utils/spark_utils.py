@@ -18,6 +18,4 @@ def create_spark_session() -> SparkSession:
         .getOrCreate()
     )
 
-    print(spark.sql("SHOW TABLES").show())
-
     return spark

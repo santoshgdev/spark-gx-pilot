@@ -14,6 +14,7 @@ def main():
     spark = create_spark_session()
 
     df = spark.read.format("huggingface").load("DavidVivancos/MindBigData2022_MNIST_IN")
+    df.show()
     print(df.schema)
 
 
